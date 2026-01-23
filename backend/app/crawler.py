@@ -194,7 +194,7 @@ class LinkedInCrawler:
 
         except Exception as e:
             logger.error(f"Error scraping profile {url}: {e}")
-            return {"error": f"Scraping failed: {str(e)}", "url": url}
+            return {"error": "Scraping failed", "url": url}
 
     def _extract_text(self, soup: BeautifulSoup, selector: tuple) -> Optional[str]:
         """
@@ -249,7 +249,7 @@ class LinkedInCrawler:
 
             except Exception as e:
                 logger.error(f"Failed to process profile {profile_url}: {e}")
-                results.append({"error": f"Processing failed: {str(e)}", "url": profile_url})
+                results.append({"error": "Processing failed", "url": profile_url})
 
         logger.info(f"Crawling completed. Processed {len(results)} profiles")
         return results

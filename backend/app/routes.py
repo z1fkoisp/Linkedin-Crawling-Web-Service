@@ -12,4 +12,4 @@ def crawl_linkedin(profiles: list[str]):
         results = crawler.crawl_profiles(profiles)
         return {"profiles": results}
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail="Internal server error during LinkedIn crawling")
