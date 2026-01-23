@@ -1,0 +1,70 @@
+# Requirements for LinkedIn Web Crawler Backend
+# This file lists all Python dependencies needed to run the FastAPI application
+# Install with: pip install -r requirements.txt
+
+# =============================================================================
+# Core Web Framework and Server
+# =============================================================================
+
+# FastAPI - Modern, fast web framework for building APIs with Python 3.7+
+# Provides automatic API documentation, validation, and async support
+fastapi==0.104.1
+
+# Uvicorn - ASGI server implementation for Python
+# High-performance server for running FastAPI applications
+uvicorn[standard]==0.24.0
+
+# =============================================================================
+# Web Scraping Dependencies
+# =============================================================================
+
+# Selenium - Browser automation tool for web scraping
+# Allows programmatic control of web browsers for dynamic content scraping
+selenium==4.15.2
+
+# Beautiful Soup 4 - HTML and XML parser
+# Used for parsing and navigating HTML content extracted from web pages
+beautifulsoup4==4.12.2
+
+# lxml - XML and HTML parser (optional dependency for Beautiful Soup)
+# Provides faster parsing capabilities
+lxml==4.9.3
+
+# =============================================================================
+# Data Validation and Serialization
+# =============================================================================
+
+# Pydantic - Data validation and settings management using Python type annotations
+# Included with FastAPI but pinned for consistency
+pydantic==2.5.0
+
+# =============================================================================
+# HTTP Client (if needed for additional API calls)
+# =============================================================================
+
+# Requests - Python HTTP library for making HTTP requests
+# Useful for additional web interactions beyond Selenium
+requests==2.31.0
+
+# =============================================================================
+# Development and Testing Dependencies (optional)
+# =============================================================================
+
+# pytest - Testing framework for Python
+# Uncomment for running tests: pip install pytest
+# pytest==7.4.3
+
+# black - Code formatter
+# Uncomment for code formatting: pip install black
+# black==23.11.0
+
+# flake8 - Linting tool
+# Uncomment for code linting: pip install flake8
+# flake8==6.1.0
+
+# =============================================================================
+# Notes:
+# - Versions are pinned to ensure reproducibility
+# - Update versions periodically to get latest features and security fixes
+# - For production deployment, consider using pip-tools or poetry for better dependency management
+# =============================================================================
