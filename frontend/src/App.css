@@ -1,0 +1,189 @@
+/* LinkedIn Web Crawler Frontend Styles */
+/* Main application CSS file for custom styling */
+
+/* Root container styles */
+#root {
+  /* Maximum width for large screens */
+  max-width: 1280px;
+  /* Center the container horizontally */
+  margin: 0 auto;
+  /* Padding around the content */
+  padding: 2rem;
+  /* Center text alignment for default content */
+  text-align: center;
+}
+
+/* Logo styles (if used) */
+.logo {
+  /* Logo height */
+  height: 6em;
+  /* Padding around logo */
+  padding: 1.5em;
+  /* Optimize for animations */
+  will-change: filter;
+  /* Smooth transition for hover effects */
+  transition: filter 300ms;
+}
+
+/* Logo hover effect */
+.logo:hover {
+  /* Add glow effect on hover */
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+/* React logo specific hover effect */
+.logo.react:hover {
+  /* React brand color glow */
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Logo spin animation keyframes */
+@keyframes logo-spin {
+  from {
+    /* Start rotation */
+    transform: rotate(0deg);
+  }
+  to {
+    /* End rotation (full circle) */
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation media query - only animate if user doesn't prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  /* Apply spin animation to second logo link */
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card component styles */
+.card {
+  /* Padding inside cards */
+  padding: 2em;
+}
+
+/* Read the docs link styles */
+.read-the-docs {
+  /* Muted text color */
+  color: #888;
+}
+
+/* Custom styles for LinkedIn Web Crawler */
+
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Loading spinner */
+.spinner {
+  /* Create spinning border effect */
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  /* Center the spinner */
+  margin: 20px auto;
+}
+
+/* Error message styles */
+.error-message {
+  /* Red background for errors */
+  background-color: #fee;
+  /* Red border */
+  border: 1px solid #fcc;
+  /* Red text */
+  color: #c33;
+  /* Padding for readability */
+  padding: 10px;
+  /* Rounded corners */
+  border-radius: 4px;
+  /* Margin for spacing */
+  margin: 10px 0;
+}
+
+/* Success message styles */
+.success-message {
+  /* Green background for success */
+  background-color: #efe;
+  /* Green border */
+  border: 1px solid #cfc;
+  /* Green text */
+  color: #363;
+  /* Padding for readability */
+  padding: 10px;
+  /* Rounded corners */
+  border-radius: 4px;
+  /* Margin for spacing */
+  margin: 10px 0;
+}
+
+/* Profile card styles */
+.profile-card {
+  /* White background */
+  background: white;
+  /* Subtle shadow */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /* Rounded corners */
+  border-radius: 8px;
+  /* Padding inside */
+  padding: 20px;
+  /* Margin between cards */
+  margin: 10px 0;
+  /* Smooth transitions */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Profile card hover effect */
+.profile-card:hover {
+  /* Enhanced shadow on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Button hover effects */
+button:hover {
+  /* Scale effect on hover */
+  transform: translateY(-1px);
+  /* Enhanced shadow */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  #root {
+    /* Reduce padding on mobile */
+    padding: 1rem;
+  }
+
+  .profile-card {
+    /* Adjust padding for mobile */
+    padding: 15px;
+  }
+}
+
+/* Dark mode support (if implemented) */
+@media (prefers-color-scheme: dark) {
+  .error-message {
+    /* Dark mode error colors */
+    background-color: #422;
+    border-color: #844;
+    color: #f88;
+  }
+
+  .success-message {
+    /* Dark mode success colors */
+    background-color: #242;
+    border-color: #484;
+    color: #8f8;
+  }
+
+  .profile-card {
+    /* Dark mode card background */
+    background: #333;
+    color: #fff;
+  }
+}
