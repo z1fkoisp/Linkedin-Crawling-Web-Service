@@ -44,7 +44,7 @@ pydantic==2.5.0
 
 # Requests - Python HTTP library for making HTTP requests
 # Useful for additional web interactions beyond Selenium
-requests==2.31.0
+requests==2.32.4
 
 # =============================================================================
 # Development and Testing Dependencies (optional)
