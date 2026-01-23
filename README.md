@@ -311,12 +311,4 @@ The developers of this project are not responsible for any misuse or legal conse
 
 ---
 
-## Demo Screenshots
-
-### Frontend Interface
-![Frontend Dashboard](./static/Screenshot%20(206).png)
-
-### Crawler in Action
-![Crawler Process](./static/image.png)
-
 
