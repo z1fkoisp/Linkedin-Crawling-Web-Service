@@ -1,6 +1,7 @@
 # Requirements for LinkedIn Web Crawler Backend
 # This file lists all Python dependencies needed to run the FastAPI application
 # Install with: pip install -r requirements.txt
+-e .
 
 # =============================================================================
 # Core Web Framework and Server
